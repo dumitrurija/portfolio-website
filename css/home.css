@@ -1,0 +1,166 @@
+.home {
+  display: flex;
+  padding: 30px 15%;
+  margin-top: 25px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.content p {
+  margin-bottom: 25px;
+}
+
+.git-btn {
+  background: #0745E7;
+  color: white;
+  font-weight: 300;
+  border: none;
+
+  transition: 0.3s;
+}
+.git-btn:hover{
+  background: #0632a1;
+}
+.git-btn:active{
+  opacity: 0.9;
+}
+
+.lm-btn {
+  background: transparent;
+  border: 1px solid black;
+  font-weight: 300;
+  margin-left: 15px;
+
+  transition: 0.3s;
+}
+.lm-btn:hover {
+  background: #0745E7;
+  border: none;
+  color: white;
+}
+.lm-btn:active {
+  background: #0632a1;
+}
+
+.git-btn, .lm-btn {
+  width: 180px;
+  height: 45px;
+  border-radius: 300px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  color: #0745E7;
+}
+
+.eu {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .content h1 {
+    font-size: 48px;
+  }
+  .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .git-btn, .lm-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 300px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .home {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .home {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .content h1{
+    font-size: 55px;
+  }
+  .content p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .buttons {
+    margin-bottom: 25px;
+  }
+  .git-btn, .lm-btn {
+    width: 163px;
+    height: 41px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .content h1{
+    font-size: 50px;
+  }
+  .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    margin-bottom: 30px;
+  }
+  .git-btn, .lm-btn {
+    width: 140px;
+    height: 36px;
+    font-size: 13px;
+  }
+}

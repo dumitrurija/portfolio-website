@@ -1,0 +1,57 @@
+li, a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15%;
+}
+
+.navlist li {
+  color: #4A4A4A;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navlist li a {
+  transition: all 0.3s ease 1s;
+}
+
+.navlist li:hover {
+  color: #0745E7;
+}
+
+.logo {
+  color: #000;
+  font-size: 64px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Add this CSS to your style.css or a separate CSS file */
+.navlist li a {
+  text-decoration: none; /* Remove underline */
+  color: #4A4A4A; /* Set your desired link color */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.navlist li:hover a {
+  color: #0745E7; /* Change link color on hover */
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .logo {
+    font-size: 50px;
+  }
+
+  .navlist a {
+    font-size: 18px;
+  }
+}

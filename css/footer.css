@@ -1,0 +1,47 @@
+footer {
+  padding: 30px 15%;
+  background: #202020;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name p {
+  color: white;
+  font-weight: 700;
+}
+
+.social > div {
+  display: flex;
+  width: 55px;
+  justify-content: space-between;
+}
+
+.social > div > img {
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .name p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+}
+
+@media screen and (max-width: 400px) {
+  .name p {
+    font-size: 14px;
+  }
+
+  .social > div > img {
+    margin-left: 10px;
+  }
+
+  .social > div > img {
+    width: 20px;
+  }
+}
