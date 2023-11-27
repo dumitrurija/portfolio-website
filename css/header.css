@@ -34,17 +34,26 @@ header {
   cursor: pointer;
 }
 
-/* Add this CSS to your style.css or a separate CSS file */
 .navlist li a {
-  text-decoration: none; /* Remove underline */
-  color: #4A4A4A; /* Set your desired link color */
-  transition: color 0.3s ease; /* Add transition effect */
+  text-decoration: none; 
+  color: #4A4A4A; 
+  transition: color 0.3s ease;
 }
 
 .navlist li:hover a {
-  color: #0745E7; /* Change link color on hover */
+  color: #0745E7;
 }
 
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  font-size: 24px;
+}
+.mobile-menu i:hover {
+  color: #0745E7;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .logo {
@@ -53,5 +62,14 @@ header {
 
   .navlist a {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: block;
+  }
+  header nav {
+    display: none;
   }
 }
